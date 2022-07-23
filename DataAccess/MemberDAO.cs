@@ -63,14 +63,13 @@ namespace DataAccess
             return MemberList;
         }
 
-        public Member GetMemberByName(string memberName)
+        public IEnumerable<Member> GetMemberByName(string? keyword)
         {
             List<Member> MemberList = GetMemberList();
 
-
             //using LINQ to Object
-            Member member = MemberList.Where(pro => pro.CompanyName.ToUpper() == memberName.ToUpper()).FirstOrDefault();
-            return member;
+            var members = MemberList.Where(pro => pro.CompanyName.ToUpper().Contains(keyword.ToUpper())).ToList();
+            return members;
         }
         //-----------------------------------------------------------------
         //Add a new member

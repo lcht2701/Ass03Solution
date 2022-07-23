@@ -17,7 +17,7 @@ namespace DataAccess.Repository
         public List<Product> Filter(String name, string unitprice, string unitinstock, string id) => ProductDAO.Instance.Filter(name, unitprice, unitinstock, id);
         public List<Product> GetProductByUnitInStock(int param) => ProductDAO.Instance.GetProductByUnitInStock(param);
         public List<Product> GetProductByUnitPrice(decimal param) => ProductDAO.Instance.GetProductByUnitPrice(param);
-        public List<Product> GetProductByName(String param) => ProductDAO.Instance.GetProductByName(param);
+        public IEnumerable<Product> GetProductByName(String param) => ProductDAO.Instance.GetProductByName(param);
         public List<Product> GetProductByUnitPriceAndUnitInStock(int a, int b) => ProductDAO.Instance.Filter(a, b);
 
     }

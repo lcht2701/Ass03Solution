@@ -11,7 +11,7 @@ namespace DataAccess.Repository
     public class MemberRepository : IMemberRepository
     {
         public Member GetMemberByID(int? memId) => MemberDAO.Instance.GetMemberByID(memId);
-        public Member GetMemberByName(string memName) => MemberDAO.Instance.GetMemberByName(memName);
+        public IEnumerable<Member> GetMemberByName(string? memName) => MemberDAO.Instance.GetMemberByName(memName);
 
         public IEnumerable<Member> GetMembers()
         {

@@ -107,26 +107,25 @@ namespace DataAccess
             }
             return mem;
         }
-        public List<Product> GetProductByName(String name)
+
+        public IEnumerable<Product> GetProductByName(String name)
         {
-            List<Product> mem = new List<Product>();
+            IEnumerable<Product> ProductList = GetProductList();
+            IEnumerable<Product> products;
             try
             {
-                using var context = new eStoreContext();
-                var members = context.Products.ToList();
-                foreach (var x in members)
-                {
-                    if (x.ProductName.Contains(name))
-                    {
-                        mem.Add(x);
-                    }
-                }
+
+                ProductList = GetProductList();
+
+                //using LINQ to Object
+                products = ProductList.Where(pro => pro.ProductName.ToUpper().Contains(name.ToUpper())).ToList();
+                return products;
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
-            return mem;
+            
         }
         public List<Product> GetProductByUnitPrice(decimal param)
         {

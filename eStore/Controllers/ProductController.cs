@@ -15,9 +15,17 @@ namespace eStore.Controllers
         }
 
         // GET: MemberController
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            var list = productRepository.GetProducts();
+            IEnumerable<Product> list;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                list = productRepository.GetProductByName(searchString);
+            }
+            else
+            {
+                list = productRepository.GetProducts();
+            }
             return View(list);
         }
 

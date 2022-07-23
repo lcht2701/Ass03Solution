@@ -15,3 +15,20 @@ D:\FPT\STUDYING\Ky5_SUMMER2022\PRN211\Assignment\Ass03Solution\DataAccess\obj\De
 D:\FPT\STUDYING\Ky5_SUMMER2022\PRN211\Assignment\Ass03Solution\DataAccess\bin\Debug\net6.0\BusinessObject.dll
 D:\FPT\STUDYING\Ky5_SUMMER2022\PRN211\Assignment\Ass03Solution\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
 D:\FPT\STUDYING\Ky5_SUMMER2022\PRN211\Assignment\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+D:\Desktop\my-material\Ki 5\PRN211\Workspace\Ass03Solution\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

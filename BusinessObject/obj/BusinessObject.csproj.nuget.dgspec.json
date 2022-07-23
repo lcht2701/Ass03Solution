@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\STUDYING\\Ky5_SUMMER2022\\PRN211\\Assignment\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {}
+    "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\STUDYING\\Ky5_SUMMER2022\\PRN211\\Assignment\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\STUDYING\\Ky5_SUMMER2022\\PRN211\\Assignment\\Ass03Solution\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\FPT\\STUDYING\\Ky5_SUMMER2022\\PRN211\\Assignment\\Ass03Solution\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\STUDYING\\Ky5_SUMMER2022\\PRN211\\Assignment\\Ass03Solution\\BusinessObject\\obj\\",
+        "projectPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\doixu\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Software\\VS\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doixu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
