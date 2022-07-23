@@ -26,6 +26,7 @@ namespace BusinessObject.Models
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=1;database=Fstore2");
+                //optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=thanhWasab1;database=eStore");
             }
         }
 
