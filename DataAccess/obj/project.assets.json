@@ -2194,11 +2194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\doixu\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\DataAccess\\obj\\",
+      "outputPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Software\\VS\\Shared\\NuGetPackages",
@@ -2220,8 +2220,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\BusinessObject\\BusinessObject.csproj"
+            "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

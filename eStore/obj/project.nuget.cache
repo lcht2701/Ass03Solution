@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BhbMJpn6lY1w4C7awVKb8UetLeEEy2HxT0EBQ6PPcJJBLrYLfczQo15JLWWWGTJsGO+m5Louz9v+liYusDtyBw==",
+  "dgSpecHash": "otvneR0Bp1txxLbgcQCFJ2a2JrQVfuX0ha8KYY1ENqeRrhJ+KfiuY+BlXITTK0WU4PtZGHjACV8zxlmtPLnMeQ==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\eStore\\eStore.csproj",
+  "projectFilePath": "D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Labs\\Ass03Solution\\eStore\\eStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\doixu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\doixu\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -188,12 +188,5 @@
     "C:\\Users\\doixu\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\doixu\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Desktop\\my-material\\Ki 5\\PRN211\\Workspace\\Ass03Solution\\eStore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

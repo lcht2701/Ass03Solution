@@ -46,7 +46,7 @@
 </div>
 
 <div>
-    <a asp-action="OrderDetailsList">Back to Details List</a>
+    @Html.ActionLink("Order Details", "OrderDetailsList", new { id=Model.OrderId })
 </div>
 
 @section Scripts {

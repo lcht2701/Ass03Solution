@@ -187,7 +187,22 @@ namespace DataAccess
             try
             {
                 using var context = new eStoreContext();
-                mem = context.OrderDetails.SingleOrDefault(c => c.OrderId == OrderID);
+                mem = context.OrderDetails.FirstOrDefault(c => c.OrderId == OrderID);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return mem;
+        }
+
+        public IQueryable<OrderDetail> GetOrderDetailByOrderID(int? OrderID)
+        {
+            IQueryable<OrderDetail> mem = null;
+            try
+            {
+                using var context = new eStoreContext();
+                mem = context.OrderDetails.Where(c => c.OrderId == OrderID);
             }
             catch (Exception e)
             {
@@ -260,21 +275,18 @@ namespace DataAccess
 
         //-----------------------------------------------------------------
         //Add a new member
-        public void Remove(int OrderID)
+        public void Remove(int OrderID, int ProductID)
         {
             try
             {
-                OrderDetail mem = GetOrderDetailByID(OrderID);
+                OrderDetail mem = GetOrderDetailByOrderAndProduct(OrderID, ProductID);
                 if (mem != null)
                 {
                     using var context = new eStoreContext();
                     context.OrderDetails.Remove(mem);
                     context.SaveChanges();
                 }
-                else
-                {
-                    throw new Exception("The  OrderDetail does not already exist.");
-                }
+
             }
             catch (Exception e)
             {
@@ -282,5 +294,23 @@ namespace DataAccess
             }
         }
 
+        public void RemoveByOrderID(int OrderID)
+        {
+            try
+            {
+                IQueryable<OrderDetail> mem = GetOrderDetailByOrderID(OrderID);
+                if (mem != null)
+                {
+                    using var context = new eStoreContext();
+                    context.OrderDetails.RemoveRange(mem);
+                    context.SaveChanges();
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }

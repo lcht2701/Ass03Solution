@@ -49,9 +49,9 @@ namespace DataAccess
         public Member GetMemberByID(int? memberID)
         {
             List<Member> MemberList = GetMemberList();
-
+            Member member = null;
             //using LINQ to Object
-            Member member = MemberList.SingleOrDefault(pro => pro.MemberId == memberID);
+            member = MemberList.SingleOrDefault(pro => pro.MemberId == memberID);
             return member;
         }
         public List<Member> GetMemberByIDList(int memid)

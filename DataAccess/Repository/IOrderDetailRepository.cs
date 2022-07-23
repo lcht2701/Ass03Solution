@@ -14,7 +14,8 @@ namespace DataAccess.Repository
         OrderDetail GetOrderDetailByID(int? OrderID);
         OrderDetail GetOrderDetailByOrderAndProduct(int? OrderID, int? ProductID);
         void InsertOrderDetail(OrderDetail OrderDetail);
-        void DeleteOrderDetail(int OrderID);
+        void DeleteOrderDetailByOrderID(int OrderID);
+        void DeleteOrderDetail(int OrderID, int ProductID);
         void UpdateOrderDetail(OrderDetail OrderDetail);
         public double GetStatistic(IEnumerable<Order> id);
         public IEnumerable<OrderDetail> GetOrderDetailListByListOrder(IEnumerable<Order> id);
