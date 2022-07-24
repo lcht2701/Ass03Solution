@@ -9,6 +9,7 @@ namespace eStore.Controllers
     {
         public IOrderRepository orderRepository;
         public IOrderDetailRepository orderDetailRepository;
+        public IMemberRepository memberRepository;
 
         public OrderController()
         {
@@ -26,6 +27,7 @@ namespace eStore.Controllers
         public ActionResult OrderDetailsList(int id)
         {
             var list = orderDetailRepository.GetOrderDetailListByID(id);
+            TempData["orderId"] = id;
             return View(list);
         }
 
@@ -45,13 +47,13 @@ namespace eStore.Controllers
         }
 
         // GET: MemberController/Details/5
-        public ActionResult OrderDetails(int? id)
+        public ActionResult OrderDetails(int? id, int? pId)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            var order = orderDetailRepository.GetOrderDetailByID(id);
+            var order = orderDetailRepository.GetOrderDetailByOrderAndProduct(id,pId);
             if (order == null)
             {
                 return NotFound();
@@ -72,10 +74,7 @@ namespace eStore.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    orderRepository.InsertOrder(order);
-                }
+                orderRepository.InsertOrder(order);
                 return RedirectToAction(nameof(CreateOrderDetail));
             }
             catch (Exception ex)
@@ -98,11 +97,8 @@ namespace eStore.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    orderDetailRepository.InsertOrderDetail(orderDetail);
-                }
-                return RedirectToAction(nameof(Index));
+                orderDetailRepository.InsertOrderDetail(orderDetail);
+                return RedirectToAction(nameof(OrderDetailsList), new {id = orderDetail.OrderId});
             }
             catch (Exception ex)
             {
@@ -137,10 +133,7 @@ namespace eStore.Controllers
                 {
                     return NotFound();
                 }
-                if (ModelState.IsValid)
-                {
-                    orderRepository.UpdateOrder(order);
-                }
+                orderRepository.UpdateOrder(order);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
@@ -151,13 +144,13 @@ namespace eStore.Controllers
         }
 
         // GET: MemberController/Edit/5
-        public ActionResult EditOrderDetail(int? id)
+        public ActionResult EditOrderDetail(int? id, int? pId)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            var order = orderDetailRepository.GetOrderDetailByID(id);
+            var order = orderDetailRepository.GetOrderDetailByOrderAndProduct(id, pId);
             if (order == null)
             {
                 return NotFound();
@@ -176,11 +169,8 @@ namespace eStore.Controllers
                 {
                     return NotFound();
                 }
-                if (ModelState.IsValid)
-                {
-                    orderDetailRepository.UpdateOrderDetail(orderDetail);
-                }
-                return RedirectToAction(nameof(Index));
+                orderDetailRepository.UpdateOrderDetail(orderDetail);
+                return RedirectToAction(nameof(OrderDetailsList), new { id = orderDetail.OrderId });
             }
             catch (Exception ex)
             {
@@ -211,7 +201,7 @@ namespace eStore.Controllers
         {
             try
             {
-                orderDetailRepository.DeleteOrderDetail(id);
+                orderDetailRepository.DeleteOrderDetailByOrderID(id);
                 orderRepository.DeleteOrder(id);
                 return RedirectToAction(nameof(Index));
             }
@@ -223,29 +213,30 @@ namespace eStore.Controllers
         }
 
         // GET: MemberController/Delete/5
-        public ActionResult DeleteOrderDetail(int? id)
+        public ActionResult DeleteOrderDetail(int? id, int? pId)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            var order = orderDetailRepository.GetOrderDetailByID(id);
+            var order = orderDetailRepository.GetOrderDetailByOrderAndProduct(id, pId);
             if (order == null)
             {
                 return NotFound();
             }
+            TempData["pId"] = pId;
             return View(order);
         }
 
         // POST: MemberController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteOrderDetail(int id)
+        public ActionResult DeleteOrderDetail(int id, int pId)
         {
             try
             {
-                orderDetailRepository.DeleteOrderDetail(id);
-                return RedirectToAction(nameof(OrderDetailsList));
+                orderDetailRepository.DeleteOrderDetail(id, pId);
+                return RedirectToAction(nameof(OrderDetailsList), new { id = id });
             }
             catch (Exception ex)
             {

@@ -13,7 +13,7 @@ namespace DataAccess.Repository
         IEnumerable<Member> GetMembers();
         IEnumerable<Member> GetMemberByIDList(int memid);
         Member GetMemberByID(int? memId);
-        Member GetMemberByName(string memName);
+        IEnumerable<Member> GetMemberByName(string? memName);
         void InsertMember(Member member);
         void DeleteMember(int memId);
         void UpdateMember(Member member);

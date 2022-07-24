@@ -44,6 +44,6 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit Order Detail", "Edit", new { id = Model.OrderId }) |
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Edit Order Detail", "EditOrderDetail", new  { id=Model.OrderId, pId = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "OrderDetailsList", new { id = Model.OrderId }) 
 </div>

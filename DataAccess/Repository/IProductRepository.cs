@@ -18,7 +18,7 @@ namespace DataAccess.Repository
         public List<Product> Filter(String name, string unitprice, string unitinstock, string id);
         public List<Product> GetProductByUnitInStock(int param);
         public List<Product> GetProductByUnitPrice(decimal param);
-        public List<Product> GetProductByName(String param);
+        public IEnumerable<Product> GetProductByName(String param);
         List<Product> GetProductByUnitPriceAndUnitInStock(int a, int b);
 
     }

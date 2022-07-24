@@ -18,7 +18,9 @@ namespace DataAccess.Repository
         public IEnumerable<OrderDetail> GetOrderDetailListByListOrder(IEnumerable<Order> id) => OrderDetailDAO.Instance.GetOrderDetailListByListOrder(id);
         public IEnumerable<OrderDetail> GetOrderDetailListByListOrder(List<Order> id) => OrderDetailDAO.Instance.GetOrderDetailListByListOrder(id);
         public void InsertOrderDetail(OrderDetail OrderDetail) => OrderDetailDAO.Instance.AddNew(OrderDetail);
-        public void DeleteOrderDetail(int OrderID) => OrderDetailDAO.Instance.Remove(OrderID);
+
+        public void DeleteOrderDetailByOrderID(int OrderID) => OrderDetailDAO.Instance.RemoveByOrderID(OrderID);
+        public void DeleteOrderDetail(int OrderID, int ProductID) => OrderDetailDAO.Instance.Remove(OrderID,ProductID);
         public void UpdateOrderDetail(OrderDetail OrderDetail) => OrderDetailDAO.Instance.Update(OrderDetail);
 
         public IEnumerable<OrderDetail> GetOrderDetailListByID(int id) => OrderDetailDAO.Instance.GetOrderDetailListByID(id);

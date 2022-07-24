@@ -11,6 +11,14 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Member" asp-action="Index">
+    <p>
+        <input type='text' name='SearchString' value="" placeholder="Search keyword" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

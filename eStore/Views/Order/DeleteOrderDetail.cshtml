@@ -45,6 +45,7 @@
     </dl>
     
     <form asp-action="DeleteOrderDetail">
+        <input type="hidden" name="pId" value="@TempData["pId"]" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="OrderDetailsList">Back to Details List</a>
     </form>
